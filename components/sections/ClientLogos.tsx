@@ -29,7 +29,7 @@ export default function ClientLogos() {
             <span className="text-gradient-blue">That Lead</span>
           </h2>
           <p className="text-xl text-gray-400">
-            We partner with industry leaders to create exceptional content
+            We partner with really good brands to create exceptional content
           </p>
         </div>
 
