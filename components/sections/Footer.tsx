@@ -123,7 +123,7 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <Mail className="w-5 h-5 text-[#00BFFF] mt-0.5 flex-shrink-0" />
                 <a
-                  href="mailto:hello@at8.agency"
+                  href="mailto:ateightmedia@gmail.com"
                   className="text-gray-400 hover:text-[#00BFFF] transition-colors"
                 >
                   ateightmedia@gmail.com
