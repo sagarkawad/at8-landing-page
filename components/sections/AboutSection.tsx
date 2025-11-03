@@ -48,9 +48,10 @@ export default function AboutSection() {
             About <span className="text-gradient-blue">At8</span>
           </h2>
           <p className="text-xl md:text-2xl text-gray-400 max-w-4xl mx-auto leading-relaxed">
-            We're a team of creative strategists, content creators, and
-            marketing experts who specialize in crafting scroll-stopping
-            short-form content that drives real results.
+            So currently it&apos;s just me running the agency with a few close
+            people working on a contract basis who are already experienced.
+            Other than that we have a strong team of freelancers who work with
+            us according to the projects.
           </p>
         </div>
 
@@ -80,18 +81,22 @@ export default function AboutSection() {
             <p className="text-gray-400 text-lg leading-relaxed mb-6">
               Founded by a team of digital marketing veterans and creative
               minds, At8 was born from the frustration of seeing brands struggle
-              with short-form content that just doesn't convert.
+              with short-form content that just doesn&apos;t convert. Founded by
+              someone who was interested in media creation and tech in general
+              since childhood, At8 was born from the requirement by few of the
+              consumers of AI tools to have someone by their side to give them
+              end-to-end service from ideation to running ad-campaigns.
             </p>
             <p className="text-gray-400 text-lg leading-relaxed mb-6">
-              We realized that creating viral content isn't just about being
-              creative—it's about understanding psychology, platform algorithms,
-              and most importantly, your audience's deepest desires and pain
-              points.
+              We realized that creating viral content isn&apos;t just about
+              being creative—it&apos;s about understanding psychology, platform
+              algorithms, and most importantly, your audience&apos;s deepest
+              desires and pain points.
             </p>
             <p className="text-gray-400 text-lg leading-relaxed">
-              Today, we've helped hundreds of brands transform their social
-              media presence and achieve unprecedented growth through strategic,
-              data-driven short-form content.
+              We are getting started but we are confident that we can create
+              social media presence and achieve unprecedented growth through
+              strategic, data-driven short-form content for those who need it.
             </p>
           </div>
           <div className="relative">
