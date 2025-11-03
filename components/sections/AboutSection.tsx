@@ -79,15 +79,6 @@ export default function AboutSection() {
               Our <span className="text-gradient-blue">Story</span>
             </h3>
             <p className="text-gray-400 text-lg leading-relaxed mb-6">
-              Founded by a team of digital marketing veterans and creative
-              minds, At8 was born from the frustration of seeing brands struggle
-              with short-form content that just doesn&apos;t convert. Founded by
-              someone who was interested in media creation and tech in general
-              since childhood, At8 was born from the requirement by few of the
-              consumers of AI tools to have someone by their side to give them
-              end-to-end service from ideation to running ad-campaigns.
-            </p>
-            <p className="text-gray-400 text-lg leading-relaxed mb-6">
               We realized that creating viral content isn&apos;t just about
               being creative—it&apos;s about understanding psychology, platform
               algorithms, and most importantly, your audience&apos;s deepest
@@ -97,6 +88,7 @@ export default function AboutSection() {
               We are getting started but we are confident that we can create
               social media presence and achieve unprecedented growth through
               strategic, data-driven short-form content for those who need it.
+              And if it&apos;s about the numbers, we are growing!
             </p>
           </div>
           <div className="relative">

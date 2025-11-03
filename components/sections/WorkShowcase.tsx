@@ -184,8 +184,7 @@ export default function WorkShowcase() {
             Our <span className="text-gradient-blue">Creative Work</span>
           </h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            Scroll-stopping content that drives millions of views and
-            conversions
+            Scroll-stopping content that drives views and conversions
           </p>
         </div>
 

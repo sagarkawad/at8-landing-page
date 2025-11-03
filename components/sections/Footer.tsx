@@ -30,8 +30,9 @@ export default function Footer() {
               />
             </div>
             <p className="text-gray-400 leading-relaxed">
-              Creating scroll-stopping short-form ads that help brands go viral
-              and drive real results.
+              We surely are at our early stage but we are confident enough that
+              we are going to get higher. We love what we do and we are going to
+              do it whole-heartedly. So it&apos;s not just about the numbers!
             </p>
             <div className="flex gap-4 mt-6">
               {[
