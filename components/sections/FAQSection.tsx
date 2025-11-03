@@ -16,7 +16,7 @@ const faqs = [
   {
     question: "Do you only create short-form videos?",
     answer:
-      "While short-form content is our specialty, we also create longer brand films, product demos, corporate videos, and full-scale social media campaigns. Our team adapts to whatever format best serves your brand goals.",
+      "We currently only create short-form content or static posts but we are open to new formats and their execution.",
   },
   {
     question: "Do you handle posting and ad campaigns?",
@@ -31,7 +31,7 @@ const faqs = [
   {
     question: "How can I work with At8?",
     answer:
-      "Getting started is easy! Simply reach out through our contact form, email, or social media. We'll schedule a discovery call to understand your brand, goals, and vision. From there, we'll create a custom proposal and timeline for your project.",
+      "Getting started is easy! Simply reach out by booking a call, email, or social media. We'll understand about your brand, goals, and vision. From there, we'll create a custom proposal and timeline for your project.",
   },
 ];
 

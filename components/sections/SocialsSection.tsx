@@ -6,21 +6,21 @@ const socials = [
   {
     name: "Instagram",
     icon: Instagram,
-    url: "#",
+    url: "https://www.instagram.com/at8________/",
     color: "hover:text-pink-500",
     glow: "hover:shadow-[0_0_20px_rgba(236,72,153,0.5)]",
   },
   {
     name: "YouTube",
     icon: Youtube,
-    url: "#",
+    url: "https://www.youtube.com/@ateightmedia",
     color: "hover:text-red-500",
     glow: "hover:shadow-[0_0_20px_rgba(239,68,68,0.5)]",
   },
   {
     name: "LinkedIn",
     icon: Linkedin,
-    url: "#",
+    url: "https://www.linkedin.com/company/ateight/?viewAsMember=true",
     color: "hover:text-blue-500",
     glow: "hover:shadow-[0_0_20px_rgba(59,130,246,0.5)]",
   },
@@ -31,7 +31,7 @@ const socials = [
         <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
       </svg>
     ),
-    url: "#",
+    url: "https://x.com/at8________",
     color: "hover:text-white",
     glow: "hover:shadow-[0_0_20px_rgba(255,255,255,0.5)]",
   },
@@ -69,7 +69,7 @@ export default function SocialsSection() {
 
         <div className="mt-16 inline-block px-6 py-3 rounded-full bg-gradient-to-r from-[#00BFFF]/20 to-[#1E90FF]/20 border border-[#00BFFF]/30">
           <p className="text-[#00BFFF] font-medium">
-            Join 10K+ followers staying inspired
+            Join our socials and stay inspired
           </p>
         </div>
       </div>

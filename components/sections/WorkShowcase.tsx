@@ -1,92 +1,89 @@
 "use client";
 
-import { useState, useRef } from "react";
-import { Play, Pause, ExternalLink, Instagram, Youtube } from "lucide-react";
+import { useState } from "react";
+import Image from "next/image";
+import { ExternalLink, Instagram, Youtube } from "lucide-react";
 
 const categories = ["All", "Reels", "Product Ads", "Corporate", "Brand Films"];
 
 const works = [
   {
     id: 1,
-    title: "Tech Product Launch",
-    brand: "TechCo",
-    category: "Product Ads",
+    title: "Misal ad",
+    brand: "Katakirrr",
+    category: "Food Ads",
     thumbnail:
-      "https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&cs=tinysrgb&w=800",
-    videoUrl:
-      "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
-    views: "2.5M",
-    instagramUrl: "https://www.instagram.com/p/tech-product-launch/",
-    youtubeUrl: "https://www.youtube.com/watch?v=tech-product-demo",
+      "https://imgs.search.brave.com/HyefZUzHfQFgnuvpZN9lmJvvij8xFz91aObpLc3L80c/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jb250/ZW50LmpkbWFnaWNi/b3guY29tL2NvbXAv/cHVuZS9jOS8wMjBw/eHgyMC54eDIwLjE3/MDExMzAwMDQxOC51/N2M5L2NhdGFsb2d1/ZS9rYXRhLWtpcnIt/ZXJhbmR3YW5lLXB1/bmUtcmVzdGF1cmFu/dHMtMTFhdnE2OS5q/cGc_dz0zODQwJnE9/NzU",
+    platform: "instagram",
+    videoId: "DQjvb8ID_Lj",
+    views: "600+",
+    originalUrl: "https://www.instagram.com/p/DQjvb8ID_Lj/",
   },
-  {
-    id: 2,
-    title: "Fashion Brand Reel",
-    brand: "StyleHub",
-    category: "Reels",
-    thumbnail:
-      "https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=800",
-    videoUrl:
-      "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
-    views: "1.8M",
-    instagramUrl: "https://www.instagram.com/reel/fashion-brand-reel/",
-    youtubeUrl: "https://www.youtube.com/shorts/fashion-short",
-  },
-  {
-    id: 3,
-    title: "Corporate Culture",
-    brand: "InnovateCorp",
-    category: "Corporate",
-    thumbnail:
-      "https://images.pexels.com/photos/3184639/pexels-photo-3184639.jpeg?auto=compress&cs=tinysrgb&w=800",
-    videoUrl:
-      "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
-    views: "890K",
-    youtubeUrl: "https://www.youtube.com/watch?v=corporate-culture",
-  },
-  {
-    id: 4,
-    title: "Food Brand Story",
-    brand: "TasteWave",
-    category: "Brand Films",
-    thumbnail:
-      "https://images.pexels.com/photos/3184632/pexels-photo-3184632.jpeg?auto=compress&cs=tinysrgb&w=800",
-    videoUrl:
-      "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
-    views: "3.2M",
-    instagramUrl: "https://www.instagram.com/p/food-brand-story/",
-    youtubeUrl: "https://www.youtube.com/watch?v=food-brand-film",
-  },
-  {
-    id: 5,
-    title: "Fitness App Promo",
-    brand: "FitLife",
-    category: "Reels",
-    thumbnail:
-      "https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=800",
-    videoUrl:
-      "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4",
-    views: "1.5M",
-    instagramUrl: "https://www.instagram.com/reel/fitness-app-promo/",
-  },
-  {
-    id: 6,
-    title: "Luxury Watch Ad",
-    brand: "TimeElite",
-    category: "Product Ads",
-    thumbnail:
-      "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800",
-    videoUrl:
-      "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
-    views: "2.1M",
-    youtubeUrl: "https://www.youtube.com/watch?v=luxury-watch-ad",
-  },
+  // {
+  //   id: 2,
+  //   title: "Market it!",
+  //   brand: "At8",
+  //   category: "Reels",
+  //   thumbnail:
+  //     "https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=800",
+  //   platform: "instagram",
+  //   videoId: "C1234567890",
+  //   views: "1.8M",
+  //   originalUrl: "https://www.instagram.com/reel/C1234567890/",
+  // },
+  // {
+  //   id: 3,
+  //   title: "Corporate Culture",
+  //   brand: "InnovateCorp",
+  //   category: "Corporate",
+  //   thumbnail:
+  //     "https://images.pexels.com/photos/3184639/pexels-photo-3184639.jpeg?auto=compress&cs=tinysrgb&w=800",
+  //   platform: "youtube",
+  //   videoId: "ScMzIvxBSi4",
+  //   views: "890K",
+  //   originalUrl: "https://www.youtube.com/watch?v=ScMzIvxBSi4",
+  // },
+  // {
+  //   id: 4,
+  //   title: "Food Brand Story",
+  //   brand: "TasteWave",
+  //   category: "Brand Films",
+  //   thumbnail:
+  //     "https://images.pexels.com/photos/3184632/pexels-photo-3184632.jpeg?auto=compress&cs=tinysrgb&w=800",
+  //   platform: "youtube",
+  //   videoId: "M7lc1UVf-VE",
+  //   views: "3.2M",
+  //   originalUrl: "https://www.youtube.com/watch?v=M7lc1UVf-VE",
+  // },
+  // {
+  //   id: 5,
+  //   title: "Fitness App Promo",
+  //   brand: "FitLife",
+  //   category: "Reels",
+  //   thumbnail:
+  //     "https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=800",
+  //   platform: "instagram",
+  //   videoId: "C9876543210",
+  //   views: "1.5M",
+  //   originalUrl: "https://www.instagram.com/reel/C9876543210/",
+  // },
+  // {
+  //   id: 6,
+  //   title: "Luxury Watch Ad",
+  //   brand: "TimeElite",
+  //   category: "Product Ads",
+  //   thumbnail:
+  //     "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800",
+  //   platform: "youtube",
+  //   videoId: "JGwWNGJdvx8",
+  //   views: "2.1M",
+  //   originalUrl: "https://www.youtube.com/watch?v=JGwWNGJdvx8",
+  // },
 ];
 
 export default function WorkShowcase() {
   const [activeCategory, setActiveCategory] = useState("All");
   const [playingVideo, setPlayingVideo] = useState<number | null>(null);
-  const videoRefs = useRef<{ [key: number]: HTMLVideoElement | null }>({});
 
   const filteredWorks =
     activeCategory === "All"
@@ -94,27 +91,82 @@ export default function WorkShowcase() {
       : works.filter((work) => work.category === activeCategory);
 
   const handleVideoPlay = (workId: number) => {
-    // Pause all other videos
-    Object.entries(videoRefs.current).forEach(([id, video]) => {
-      if (video && parseInt(id) !== workId) {
-        video.pause();
-      }
-    });
-
-    const video = videoRefs.current[workId];
-    if (video) {
-      if (playingVideo === workId) {
-        video.pause();
-        setPlayingVideo(null);
-      } else {
-        video.play();
-        setPlayingVideo(workId);
-      }
-    }
+    setPlayingVideo(playingVideo === workId ? null : workId);
   };
 
-  const handleVideoEnd = (workId: number) => {
-    setPlayingVideo(null);
+  const renderVideoPlayer = (work: any) => {
+    if (playingVideo !== work.id) {
+      return (
+        <div
+          className="relative aspect-[9/16] overflow-hidden cursor-pointer"
+          onClick={() => handleVideoPlay(work.id)}
+        >
+          <Image
+            src={work.thumbnail}
+            alt={work.title}
+            fill
+            className="object-cover transition-transform duration-500 group-hover:scale-110"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-80" />
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="w-16 h-16 rounded-full bg-[#00BFFF] flex items-center justify-center glow-blue">
+              {work.platform === "youtube" ? (
+                <Youtube className="w-8 h-8 text-black fill-black" />
+              ) : (
+                <Instagram className="w-8 h-8 text-black fill-black" />
+              )}
+            </div>
+          </div>
+          <div className="absolute top-4 right-4 px-3 py-1 rounded-full bg-[#00BFFF]/90 text-black text-xs font-semibold">
+            {work.views} views
+          </div>
+        </div>
+      );
+    }
+
+    // Render embedded player when playing
+    if (work.platform === "youtube") {
+      return (
+        <div className="relative aspect-[9/16] overflow-hidden">
+          <iframe
+            src={`https://www.youtube.com/embed/${work.videoId}?autoplay=1&mute=1&controls=1`}
+            className="w-full h-full"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+          <button
+            onClick={() => setPlayingVideo(null)}
+            className="absolute top-2 right-2 w-8 h-8 rounded-full bg-black/50 text-white flex items-center justify-center hover:bg-black/70 z-10"
+          >
+            ×
+          </button>
+          <div className="absolute top-4 right-12 px-3 py-1 rounded-full bg-[#00BFFF]/90 text-black text-xs font-semibold">
+            {work.views} views
+          </div>
+        </div>
+      );
+    }
+
+    if (work.platform === "instagram") {
+      return (
+        <div className="relative aspect-[9/16] overflow-hidden">
+          <iframe
+            src={`https://www.instagram.com/p/${work.videoId}/embed/`}
+            className="w-full h-full"
+            allowFullScreen
+          />
+          <button
+            onClick={() => setPlayingVideo(null)}
+            className="absolute top-2 right-2 w-8 h-8 rounded-full bg-black/50 text-white flex items-center justify-center hover:bg-black/70 z-10"
+          >
+            ×
+          </button>
+          <div className="absolute top-4 right-12 px-3 py-1 rounded-full bg-[#00BFFF]/90 text-black text-xs font-semibold">
+            {work.views} views
+          </div>
+        </div>
+      );
+    }
   };
 
   return (
@@ -153,41 +205,7 @@ export default function WorkShowcase() {
               className="group relative rounded-2xl overflow-hidden bg-white/5 border border-white/10 hover:border-[#00BFFF]/50 transition-all duration-300 hover:scale-105 hover:glow-blue"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className="relative aspect-[9/16] overflow-hidden">
-                <video
-                  ref={(el) => (videoRefs.current[work.id] = el)}
-                  src={work.videoUrl}
-                  poster={work.thumbnail}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  loop
-                  playsInline
-                  onEnded={() => handleVideoEnd(work.id)}
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-80" />
-
-                <div
-                  className="absolute inset-0 flex items-center justify-center cursor-pointer transition-opacity duration-300"
-                  onClick={() => handleVideoPlay(work.id)}
-                >
-                  <div
-                    className={`w-16 h-16 rounded-full bg-[#00BFFF] flex items-center justify-center glow-blue transition-opacity duration-300 ${
-                      playingVideo === work.id
-                        ? "opacity-0"
-                        : "opacity-0 group-hover:opacity-100"
-                    }`}
-                  >
-                    {playingVideo === work.id ? (
-                      <Pause className="w-8 h-8 text-black fill-black" />
-                    ) : (
-                      <Play className="w-8 h-8 text-black fill-black" />
-                    )}
-                  </div>
-                </div>
-
-                <div className="absolute top-4 right-4 px-3 py-1 rounded-full bg-[#00BFFF]/90 text-black text-xs font-semibold">
-                  {work.views} views
-                </div>
-              </div>
+              {renderVideoPlayer(work)}
 
               <div className="p-6">
                 <div className="flex items-start justify-between mb-2">
@@ -197,33 +215,40 @@ export default function WorkShowcase() {
                     </h3>
                     <p className="text-gray-400 text-sm">{work.brand}</p>
                   </div>
-                  <ExternalLink className="w-5 h-5 text-gray-400 group-hover:text-[#00BFFF] transition-colors" />
+                  <a
+                    href={work.originalUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-400 group-hover:text-[#00BFFF] transition-colors"
+                  >
+                    <ExternalLink className="w-5 h-5" />
+                  </a>
                 </div>
 
                 {/* Social Media Links */}
                 <div className="flex items-center gap-3 mb-3">
-                  {work.instagramUrl && (
-                    <a
-                      href={work.instagramUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 px-3 py-1 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-white text-xs font-medium hover:scale-105 transition-transform"
-                    >
-                      <Instagram className="w-3 h-3" />
-                      Instagram
-                    </a>
-                  )}
-                  {work.youtubeUrl && (
-                    <a
-                      href={work.youtubeUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 px-3 py-1 rounded-full bg-red-600 text-white text-xs font-medium hover:scale-105 transition-transform"
-                    >
-                      <Youtube className="w-3 h-3" />
-                      YouTube
-                    </a>
-                  )}
+                  <a
+                    href={work.originalUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`flex items-center gap-2 px-3 py-1 rounded-full text-white text-xs font-medium hover:scale-105 transition-transform ${
+                      work.platform === "youtube"
+                        ? "bg-red-600"
+                        : "bg-gradient-to-r from-purple-500 to-pink-500"
+                    }`}
+                  >
+                    {work.platform === "youtube" ? (
+                      <>
+                        <Youtube className="w-3 h-3" />
+                        YouTube
+                      </>
+                    ) : (
+                      <>
+                        <Instagram className="w-3 h-3" />
+                        Instagram
+                      </>
+                    )}
+                  </a>
                 </div>
 
                 <div className="inline-block px-3 py-1 rounded-full bg-white/5 text-xs text-gray-400 border border-white/10">

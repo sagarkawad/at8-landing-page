@@ -4,8 +4,8 @@ import { CheckCircle, Users, Target, Zap } from "lucide-react";
 
 export default function AboutSection() {
   const stats = [
-    { number: "500+", label: "Campaigns Created" },
-    { number: "50M+", label: "Views Generated" },
+    { number: "2+", label: "Campaigns Created" },
+    { number: "2K+", label: "Views Generated" },
     { number: "98%", label: "Client Satisfaction" },
     { number: "3x", label: "Average ROI Increase" },
   ];
@@ -14,7 +14,8 @@ export default function AboutSection() {
     {
       icon: <Target className="h-8 w-8 text-[#00BFFF]" />,
       title: "Results-Driven",
-      description: "Every campaign is designed with conversion and engagement in mind",
+      description:
+        "Every campaign is designed with conversion and engagement in mind",
     },
     {
       icon: <Zap className="h-8 w-8 text-[#00BFFF]" />,
@@ -24,27 +25,32 @@ export default function AboutSection() {
     {
       icon: <Users className="h-8 w-8 text-[#00BFFF]" />,
       title: "Expert Team",
-      description: "Seasoned creators who understand viral content and brand messaging",
+      description:
+        "Seasoned creators who understand viral content and brand messaging",
     },
     {
       icon: <CheckCircle className="h-8 w-8 text-[#00BFFF]" />,
       title: "Proven Process",
-      description: "Our systematic approach ensures consistent, high-quality results",
+      description:
+        "Our systematic approach ensures consistent, high-quality results",
     },
   ];
 
   return (
-    <section id="about" className="relative py-24 px-6 md:px-12 bg-gradient-to-b from-black to-gray-900">
+    <section
+      id="about"
+      className="relative py-24 px-6 md:px-12 bg-gradient-to-b from-black to-gray-900"
+    >
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
-            About{" "}
-            <span className="text-gradient-blue">At8</span>
+            About <span className="text-gradient-blue">At8</span>
           </h2>
           <p className="text-xl md:text-2xl text-gray-400 max-w-4xl mx-auto leading-relaxed">
-            We're a team of creative strategists, content creators, and marketing experts 
-            who specialize in crafting scroll-stopping short-form content that drives real results.
+            We're a team of creative strategists, content creators, and
+            marketing experts who specialize in crafting scroll-stopping
+            short-form content that drives real results.
           </p>
         </div>
 
@@ -72,18 +78,20 @@ export default function AboutSection() {
               Our <span className="text-gradient-blue">Story</span>
             </h3>
             <p className="text-gray-400 text-lg leading-relaxed mb-6">
-              Founded by a team of digital marketing veterans and creative minds, At8 was born 
-              from the frustration of seeing brands struggle with short-form content that just 
-              doesn't convert.
+              Founded by a team of digital marketing veterans and creative
+              minds, At8 was born from the frustration of seeing brands struggle
+              with short-form content that just doesn't convert.
             </p>
             <p className="text-gray-400 text-lg leading-relaxed mb-6">
-              We realized that creating viral content isn't just about being creative—it's about 
-              understanding psychology, platform algorithms, and most importantly, your audience's 
-              deepest desires and pain points.
+              We realized that creating viral content isn't just about being
+              creative—it's about understanding psychology, platform algorithms,
+              and most importantly, your audience's deepest desires and pain
+              points.
             </p>
             <p className="text-gray-400 text-lg leading-relaxed">
-              Today, we've helped hundreds of brands transform their social media presence and 
-              achieve unprecedented growth through strategic, data-driven short-form content.
+              Today, we've helped hundreds of brands transform their social
+              media presence and achieve unprecedented growth through strategic,
+              data-driven short-form content.
             </p>
           </div>
           <div className="relative">
@@ -106,9 +114,7 @@ export default function AboutSection() {
                 key={index}
                 className="group p-6 rounded-2xl bg-gradient-to-br from-white/5 to-transparent border border-white/10 hover:border-[#00BFFF]/50 transition-all duration-300 hover:scale-105 text-center"
               >
-                <div className="flex justify-center mb-4">
-                  {value.icon}
-                </div>
+                <div className="flex justify-center mb-4">{value.icon}</div>
                 <h4 className="text-xl font-semibold mb-3 group-hover:text-[#00BFFF] transition-colors">
                   {value.title}
                 </h4>
