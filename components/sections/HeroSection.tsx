@@ -30,14 +30,15 @@ export default function HeroSection() {
 
       <div className="relative z-10 max-w-7xl mx-auto text-center flex-1 flex flex-col justify-center">
         <div className="mb-8 mt-16">
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-tight mb-6 tracking-tight">
-            We Create{" "}
-            <span className="relative inline-block">
-              <span className="text-gradient-blue">Scroll-Stopping</span>
+          <h1 className="text-4xl md:text-7xl lg:text-8xl font-bold leading-tight mb-6 tracking-tight text-center">
+            <div className="whitespace-nowrap">We Create</div>
+            <div className="relative inline-block mt-2">
+              <span className="text-gradient-blue whitespace-nowrap">
+                Scroll-Stopping
+              </span>
               <div className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-[#00BFFF] to-[#1E90FF] blur-sm" />
-            </span>
-            <br />
-            Short-Form Ads
+            </div>
+            <div className="whitespace-nowrap mt-2">Short-Form Ads</div>
           </h1>
 
           <p className="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto  leading-relaxed">
