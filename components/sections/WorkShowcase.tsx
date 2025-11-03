@@ -4,14 +4,24 @@ import { useState } from "react";
 import Image from "next/image";
 import { ExternalLink, Instagram, Youtube } from "lucide-react";
 
-const categories = ["All", "Reels", "Product Ads", "Corporate", "Brand Films"];
-
 const works = [
   {
     id: 1,
+    title: "Market it!",
+    brand: "At8",
+    tags: ["Social Media", "Marketing"],
+    thumbnail:
+      "https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=800",
+    platform: "instagram",
+    videoId: "DQYikc9AY2Y",
+    views: "600+",
+    originalUrl: "https://www.instagram.com/p/DQYikc9AY2Y/",
+  },
+  {
+    id: 2,
     title: "Misal ad",
     brand: "Katakirrr",
-    category: "Food Ads",
+    tags: ["Food & Beverage", "Local Business"],
     thumbnail:
       "https://imgs.search.brave.com/HyefZUzHfQFgnuvpZN9lmJvvij8xFz91aObpLc3L80c/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jb250/ZW50LmpkbWFnaWNi/b3guY29tL2NvbXAv/cHVuZS9jOS8wMjBw/eHgyMC54eDIwLjE3/MDExMzAwMDQxOC51/N2M5L2NhdGFsb2d1/ZS9rYXRhLWtpcnIt/ZXJhbmR3YW5lLXB1/bmUtcmVzdGF1cmFu/dHMtMTFhdnE2OS5q/cGc_dz0zODQwJnE9/NzU",
     platform: "instagram",
@@ -19,30 +29,18 @@ const works = [
     views: "600+",
     originalUrl: "https://www.instagram.com/p/DQjvb8ID_Lj/",
   },
-  // {
-  //   id: 2,
-  //   title: "Market it!",
-  //   brand: "At8",
-  //   category: "Reels",
-  //   thumbnail:
-  //     "https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=800",
-  //   platform: "instagram",
-  //   videoId: "C1234567890",
-  //   views: "1.8M",
-  //   originalUrl: "https://www.instagram.com/reel/C1234567890/",
-  // },
-  // {
-  //   id: 3,
-  //   title: "Corporate Culture",
-  //   brand: "InnovateCorp",
-  //   category: "Corporate",
-  //   thumbnail:
-  //     "https://images.pexels.com/photos/3184639/pexels-photo-3184639.jpeg?auto=compress&cs=tinysrgb&w=800",
-  //   platform: "youtube",
-  //   videoId: "ScMzIvxBSi4",
-  //   views: "890K",
-  //   originalUrl: "https://www.youtube.com/watch?v=ScMzIvxBSi4",
-  // },
+  {
+    id: 3,
+    title: "Find your wild!",
+    brand: "Wild Stone",
+    tags: ["Product Ads", "Beauty & Personal Care", "Brand Campaign"],
+    thumbnail:
+      "https://imgs.search.brave.com/JMsVqb5eKOAKFvuLzd3gm0WfE__GKS4jXkgxo6C9mLM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/d2lsZHN0b25lLmlu/L2Nkbi9zaG9wL2Zp/bGVzL0FydGJvYXJk/XzVfNGM1NTJjZmQt/ZTAwZC00MDQ4LTk5/MzQtY2E3YjM4NTEz/M2M2XzE0NDV4Lmpw/Zz92PTE3MjMxMDE3/MzA",
+    platform: "instagram",
+    videoId: "DQb0YwKjK6Y",
+    views: "500+",
+    originalUrl: "https://www.instagram.com/p/DQb0YwKjK6Y/",
+  },
   // {
   //   id: 4,
   //   title: "Food Brand Story",
@@ -81,6 +79,15 @@ const works = [
   // },
 ];
 
+// Get all unique tags from works and create categories
+const getAllTags = () => {
+  const allTags = works.flatMap((work) => work.tags);
+  const uniqueTags = Array.from(new Set(allTags));
+  return ["All", ...uniqueTags.sort()];
+};
+
+const categories = getAllTags();
+
 export default function WorkShowcase() {
   const [activeCategory, setActiveCategory] = useState("All");
   const [playingVideo, setPlayingVideo] = useState<number | null>(null);
@@ -88,7 +95,7 @@ export default function WorkShowcase() {
   const filteredWorks =
     activeCategory === "All"
       ? works
-      : works.filter((work) => work.category === activeCategory);
+      : works.filter((work) => work.tags.includes(activeCategory));
 
   const handleVideoPlay = (workId: number) => {
     setPlayingVideo(playingVideo === workId ? null : workId);
@@ -251,8 +258,16 @@ export default function WorkShowcase() {
                   </a>
                 </div>
 
-                <div className="inline-block px-3 py-1 rounded-full bg-white/5 text-xs text-gray-400 border border-white/10">
-                  {work.category}
+                <div className="flex flex-wrap gap-2">
+                  {work.tags.map((tag, tagIndex) => (
+                    <div
+                      key={tagIndex}
+                      className="inline-block px-3 py-1 rounded-full bg-white/5 text-xs text-gray-400 border border-white/10 hover:bg-[#00BFFF]/10 hover:border-[#00BFFF]/30 hover:text-[#00BFFF] transition-all duration-200 cursor-pointer"
+                      onClick={() => setActiveCategory(tag)}
+                    >
+                      {tag}
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
