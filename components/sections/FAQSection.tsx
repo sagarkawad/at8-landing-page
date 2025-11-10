@@ -11,22 +11,27 @@ const faqs = [
   {
     question: "What services does At8 offer?",
     answer:
-      "At8 specializes in creating high-conversion short-form video content including Instagram Reels, YouTube Shorts, TikTok videos, and paid ad campaigns. We also offer full social media management, content scheduling, and ad campaign optimization across all major platforms.",
+      "At8 offers comprehensive digital solutions including graphic/logo design, short-form video content (Instagram Reels, YouTube Shorts, TikTok), static and carousel posts, full social media management and handling, paid advertising campaigns, website design and development, and mobile app development for iOS and Android platforms.",
   },
   {
     question: "Do you only create short-form videos?",
     answer:
-      "We currently only create short-form content or static posts but we are open to new formats and their execution.",
+      "We currently only create short-form content or static posts but we are open to new formats and their execution. So just let us know and we'll be at it.",
   },
   {
     question: "Do you handle posting and ad campaigns?",
     answer:
-      "Absolutely! We offer end-to-end social media management including content creation, scheduling, posting, community engagement, and running paid advertising campaigns across Instagram, Facebook, TikTok, YouTube, and LinkedIn.",
+      "Absolutely! We offer end-to-end social media management including content creation, scheduling, posting, community engagement, and running paid advertising campaigns across Instagram, Facebook, YouTube, LinkedIn & X",
   },
   {
     question: "How much do you charge per video/ad?",
     answer:
       "Our pricing varies based on project scope, video length, complexity, and deliverables. We offer custom packages starting from single videos to monthly retainers for ongoing content. Contact us for a personalized quote tailored to your needs.",
+  },
+  {
+    question: "How much do you charge per website/application?",
+    answer:
+      "Our pricing varies depending on the complexity of the website or the application.",
   },
   {
     question: "How can I work with At8?",
@@ -69,7 +74,7 @@ export default function FAQSection() {
         <div className="mt-16 text-center p-8 rounded-2xl bg-gradient-to-br from-[#00BFFF]/10 to-[#1E90FF]/10 border border-[#00BFFF]/30">
           <h3 className="text-2xl font-bold mb-4">Still have questions?</h3>
           <p className="text-gray-400 mb-6">
-            We're here to help! Get in touch with our team.
+            We&apos;re here to help! Get in touch with our team.
           </p>
           <a href="mailto:ateightmedia@gmail.com" className="inline-block">
             <button className="px-8 py-4 rounded-full bg-[#00BFFF] text-black font-semibold hover:bg-[#1E90FF] transition-all duration-300 hover:scale-105 glow-blue">

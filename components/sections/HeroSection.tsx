@@ -31,19 +31,24 @@ export default function HeroSection() {
       <div className="relative z-10 max-w-7xl mx-auto text-center flex-1 flex flex-col justify-center">
         <div className="mb-8 mt-16">
           <h1 className="text-4xl md:text-7xl lg:text-8xl font-bold leading-tight mb-6 tracking-tight text-center">
-            <div className="whitespace-nowrap">We Create</div>
+            <div className="whitespace-normal md:whitespace-nowrap">
+              We Create
+            </div>
             <div className="relative inline-block mt-2">
-              <span className="text-gradient-blue whitespace-nowrap">
-                Scroll-Stopping
+              <span className="text-gradient-blue whitespace-normal md:whitespace-nowrap">
+                Everything
               </span>
               <div className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-[#00BFFF] to-[#1E90FF] blur-sm" />
             </div>
-            <div className="whitespace-nowrap mt-2">Short-Form Ads</div>
+            <div className="whitespace-normal md:whitespace-nowrap mt-2">
+              that your business needs!
+            </div>
           </h1>
 
-          <p className="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto  leading-relaxed">
-            At8 helps brands go viral with high-conversion reels, shorts, and
-            content ads that captivate audiences and drive results
+          <p className="text-base md:text-lg text-gray-400 max-w-3xl mx-auto  leading-relaxed">
+            From logo design to websites, mobile apps, and content creation
+            (static posts, reels, shorts, long-form videos etc.) — we do it all.
+            And not just that — we also run ad campaigns to help you grow.
           </p>
         </div>
 
@@ -77,7 +82,7 @@ export default function HeroSection() {
           </Button>
         </div>
 
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto">
+        <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto">
           {[
             {
               icon: "🎬",
@@ -91,8 +96,8 @@ export default function HeroSection() {
             },
             {
               icon: "🚀",
-              title: "Viral Growth",
-              description: "Campaigns that scale brands",
+              title: "Websites and apps",
+              description: "We build high quality websites",
             },
           ].map((item, index) => (
             <div

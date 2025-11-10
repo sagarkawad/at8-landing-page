@@ -82,13 +82,16 @@ export default function AboutSection() {
               We realized that creating viral content isn&apos;t just about
               being creative—it&apos;s about understanding psychology, platform
               algorithms, and most importantly, your audience&apos;s deepest
-              desires and pain points.
+              desires and pain points. Not just that but businesses also do need
+              other services such as website development/app development etc. so
+              for that we also have a dedicated team to make your idea a
+              reality.
             </p>
             <p className="text-gray-400 text-lg leading-relaxed">
               We are getting started but we are confident that we can create
               social media presence and achieve unprecedented growth through
-              strategic, data-driven short-form content for those who need it.
-              And if it&apos;s about the numbers, we are growing!
+              strategic, data-driven content for those who need it. And if
+              it&apos;s about the numbers, we are growing!
             </p>
           </div>
           <div className="relative">

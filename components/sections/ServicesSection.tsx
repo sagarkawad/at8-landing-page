@@ -9,6 +9,8 @@ import {
   Target,
   Camera,
   Edit3,
+  Globe,
+  Code,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -62,6 +64,29 @@ export default function ServicesSection() {
         "Performance tracking",
       ],
     },
+    {
+      icon: <Globe className="h-8 w-8 text-[#00BFFF]" />,
+      title: "Website Design and Development",
+      description:
+        "Custom websites that combine stunning design with powerful functionality to showcase your brand",
+      features: [
+        "Responsive web design",
+        "Custom development",
+        "SEO optimization",
+        "Performance optimization",
+      ],
+    },
+    {
+      icon: <Code className="h-8 w-8 text-[#00BFFF]" />,
+      title: "App Development",
+      description:
+        "Native and cross-platform mobile applications that deliver exceptional user experiences",
+      features: [
+        "iOS & Android apps",
+        "Cross-platform solutions",
+        "UI/UX design",
+      ],
+    },
   ];
 
   const processSteps = [
@@ -104,8 +129,8 @@ export default function ServicesSection() {
           </h2>
           <p className="text-xl md:text-2xl text-gray-400 max-w-4xl mx-auto leading-relaxed">
             From concept to conversion, we offer comprehensive solutions to
-            elevate your brand's social media presence and drive real business
-            results.
+            elevate your brand&apos;s social media presence and drive real
+            business results.
           </p>
         </div>
 
@@ -198,8 +223,8 @@ export default function ServicesSection() {
             Ready to <span className="text-gradient-blue">Get Started</span>?
           </h3>
           <p className="text-gray-400 text-lg mb-8 max-w-2xl mx-auto">
-            Let's discuss your project and create a custom strategy that drives
-            real results for your brand.
+            Let&apos;s discuss your project and create a custom strategy that
+            drives real results for your brand.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

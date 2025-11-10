@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { ExternalLink, Instagram, Youtube } from "lucide-react";
+import { ExternalLink, Instagram, Youtube, Globe } from "lucide-react";
 
 const works = [
   {
@@ -40,6 +40,28 @@ const works = [
     videoId: "DQb0YwKjK6Y",
     views: "500+",
     originalUrl: "https://www.instagram.com/p/DQb0YwKjK6Y/",
+  },
+  {
+    id: 4,
+    title: "Aabha Productions",
+    brand: "Aabha Productions",
+    tags: ["Website", "Web Development"],
+    thumbnail:
+      "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800",
+    platform: "website",
+    websiteUrl: "https://aabhaproductions.com",
+    views: "Live",
+  },
+  {
+    id: 5,
+    title: "Belyno Cycles",
+    brand: "Belyno Cycles",
+    tags: ["Website", "E-commerce"],
+    thumbnail:
+      "https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&w=800",
+    platform: "website",
+    websiteUrl: "https://belynocycles.com",
+    views: "Live",
   },
   // {
   //   id: 4,
@@ -102,6 +124,36 @@ export default function WorkShowcase() {
   };
 
   const renderVideoPlayer = (work: any) => {
+    // Handle website platform - always show as clickable link
+    if (work.platform === "website") {
+      return (
+        <div className="relative aspect-[9/16] overflow-hidden">
+          <a
+            href={work.websiteUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block w-full h-full cursor-pointer"
+          >
+            <Image
+              src={work.thumbnail}
+              alt={work.title}
+              fill
+              className="object-cover transition-transform duration-500 group-hover:scale-110"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-80" />
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="w-16 h-16 rounded-full bg-[#00BFFF] flex items-center justify-center glow-blue">
+                <Globe className="w-8 h-8 text-black fill-black" />
+              </div>
+            </div>
+            <div className="absolute top-4 right-4 px-3 py-1 rounded-full bg-[#00BFFF]/90 text-black text-xs font-semibold">
+              {work.views}
+            </div>
+          </a>
+        </div>
+      );
+    }
+
     if (playingVideo !== work.id) {
       return (
         <div
@@ -222,7 +274,11 @@ export default function WorkShowcase() {
                     <p className="text-gray-400 text-sm">{work.brand}</p>
                   </div>
                   <a
-                    href={work.originalUrl}
+                    href={
+                      work.platform === "website"
+                        ? work.websiteUrl
+                        : work.originalUrl
+                    }
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-400 group-hover:text-[#00BFFF] transition-colors"
@@ -231,15 +287,21 @@ export default function WorkShowcase() {
                   </a>
                 </div>
 
-                {/* Social Media Links */}
+                {/* Platform Links */}
                 <div className="flex items-center gap-3 mb-3">
                   <a
-                    href={work.originalUrl}
+                    href={
+                      work.platform === "website"
+                        ? work.websiteUrl
+                        : work.originalUrl
+                    }
                     target="_blank"
                     rel="noopener noreferrer"
                     className={`flex items-center gap-2 px-3 py-1 rounded-full text-white text-xs font-medium hover:scale-105 transition-transform ${
                       work.platform === "youtube"
                         ? "bg-red-600"
+                        : work.platform === "website"
+                        ? "bg-gradient-to-r from-[#00BFFF] to-[#1E90FF]"
                         : "bg-gradient-to-r from-purple-500 to-pink-500"
                     }`}
                   >
@@ -247,6 +309,11 @@ export default function WorkShowcase() {
                       <>
                         <Youtube className="w-3 h-3" />
                         YouTube
+                      </>
+                    ) : work.platform === "website" ? (
+                      <>
+                        <Globe className="w-3 h-3" />
+                        Website
                       </>
                     ) : (
                       <>
