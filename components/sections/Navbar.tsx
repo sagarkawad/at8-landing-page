@@ -111,13 +111,11 @@ export default function Navbar() {
                 <Button
                   size="sm"
                   onClick={() => {
-                    const element = document.querySelector("#footer");
-                    if (element) {
-                      element.scrollIntoView({
-                        behavior: "smooth",
-                        block: "start",
-                      });
-                    }
+                    window.open(
+                      "https://docs.google.com/forms/d/e/1FAIpQLSeSgj3HNE3s1hAOrX4eFmj7L0gIDj8ssz-K0QJVmbB8zqsoCQ/viewform",
+                      "_blank",
+                      "noopener,noreferrer"
+                    );
                     setIsMenuOpen(false);
                   }}
                   className="w-full bg-[#00BFFF] hover:bg-[#1E90FF] text-black font-semibold px-6 py-2 rounded-full transition-all duration-300"

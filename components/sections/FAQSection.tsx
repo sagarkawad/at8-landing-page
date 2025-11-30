@@ -81,7 +81,7 @@ export default function FAQSection() {
             className="inline-block"
           >
             <button className="px-8 py-4 rounded-full bg-[#00BFFF] text-black font-semibold hover:bg-[#1E90FF] transition-all duration-300 hover:scale-105 glow-blue">
-              Contact Us
+              Mail Us
             </button>
           </a>
         </div>
