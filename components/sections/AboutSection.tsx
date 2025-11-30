@@ -4,18 +4,17 @@ import { CheckCircle, Users, Target, Zap } from "lucide-react";
 
 export default function AboutSection() {
   const stats = [
-    { number: "2+", label: "Campaigns Created" },
-    { number: "2K+", label: "Views Generated" },
+    { number: "6+", label: "Videos + Websites Created" },
+    { number: "10K+", label: "Views Generated" },
     { number: "98%", label: "Client Satisfaction" },
-    { number: "3x", label: "Average ROI Increase" },
+    { number: "2x", label: "Average ROI Increase" },
   ];
 
   const values = [
     {
       icon: <Target className="h-8 w-8 text-[#00BFFF]" />,
       title: "Results-Driven",
-      description:
-        "Every campaign is designed with conversion and engagement in mind",
+      description: "Every media is designed with engagement and brand in mind",
     },
     {
       icon: <Zap className="h-8 w-8 text-[#00BFFF]" />,
@@ -26,7 +25,7 @@ export default function AboutSection() {
       icon: <Users className="h-8 w-8 text-[#00BFFF]" />,
       title: "Expert Team",
       description:
-        "Seasoned creators who understand viral content and brand messaging",
+        "Seasoned creators who understand content and brand messaging",
     },
     {
       icon: <CheckCircle className="h-8 w-8 text-[#00BFFF]" />,
@@ -79,13 +78,12 @@ export default function AboutSection() {
               Our <span className="text-gradient-blue">Story</span>
             </h3>
             <p className="text-gray-400 text-lg leading-relaxed mb-6">
-              We realized that creating viral content isn&apos;t just about
+              We realized that creating appealing content isn&apos;t just about
               being creative—it&apos;s about understanding psychology, platform
               algorithms, and most importantly, your audience&apos;s deepest
               desires and pain points. Not just that but businesses also do need
-              other services such as website development/app development etc. so
-              for that we also have a dedicated team to make your idea a
-              reality.
+              other services such as website design + development so for that we
+              also have a dedicated team to make your idea a reality.
             </p>
             <p className="text-gray-400 text-lg leading-relaxed">
               We are getting started but we are confident that we can create

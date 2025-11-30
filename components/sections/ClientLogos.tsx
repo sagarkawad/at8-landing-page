@@ -5,6 +5,7 @@ import {
   ShoppingBag,
   Smartphone,
   Heart,
+  Flower,
   Coffee,
   Sparkles,
 } from "lucide-react";
@@ -15,6 +16,7 @@ const clients = [
   // { name: 'AppWave', icon: Smartphone, color: 'text-green-400' },
   { name: "Aabha Productions", icon: Zap, color: "text-blue-400" },
   { name: "Belyno Cycles", icon: Heart, color: "text-red-400" },
+  { name: "Fourtastic Creations", icon: Flower, color: "text-yellow-400" },
   // { name: "BrewMaster", icon: Coffee, color: "text-amber-400" },
   // { name: "LuxeBrand", icon: Sparkles, color: "text-purple-400" },
 ];
@@ -45,7 +47,7 @@ export default function ClientLogos() {
                 <Icon
                   className={`w-12 h-12 mb-4 ${client.color} group-hover:scale-110 transition-transform duration-300`}
                 />
-                <span className="text-sm font-medium text-gray-400 group-hover:text-white transition-colors">
+                <span className="text-sm font-medium text-gray-400 group-hover:text-white transition-colors text-center">
                   {client.name}
                 </span>
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-[#00BFFF]/0 to-[#00BFFF]/0 group-hover:from-[#00BFFF]/10 group-hover:to-[#1E90FF]/10 transition-all duration-300" />
@@ -72,7 +74,7 @@ export default function ClientLogos() {
               ))}
             </div>
             <div className="text-left">
-              <p className="text-white font-semibold">2+ Happy Clients</p>
+              <p className="text-white font-semibold">3+ Happy Clients</p>
               <p className="text-gray-400 text-sm">And counting...</p>
             </div>
           </div>

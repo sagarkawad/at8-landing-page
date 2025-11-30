@@ -32,11 +32,11 @@ export default function HeroSection() {
         <div className="mb-8 mt-16">
           <h1 className="text-4xl md:text-7xl lg:text-8xl font-bold leading-tight mb-6 tracking-tight text-center">
             <div className="whitespace-normal md:whitespace-nowrap">
-              We Create
+              We create
             </div>
             <div className="relative inline-block mt-2">
               <span className="text-gradient-blue whitespace-normal md:whitespace-nowrap">
-                Everything
+                visuals and tech
               </span>
               <div className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-[#00BFFF] to-[#1E90FF] blur-sm" />
             </div>
@@ -46,15 +46,16 @@ export default function HeroSection() {
           </h1>
 
           <p className="text-base md:text-lg text-gray-400 max-w-3xl mx-auto  leading-relaxed">
-            From logo design to websites, mobile apps, and content creation
+            {/* From logo design to websites, mobile apps, and content creation
             (static posts, reels, shorts, long-form videos etc.) — we do it all.
-            And not just that — we also run ad campaigns to help you grow.
+            And not just that — we also run ad campaigns to help you grow. */}
+            We do video creation and websites that creates brand identity!
           </p>
         </div>
 
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
           <a
-            href="https://calendar.app.google/mAjQDgh176jeHbkz6"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeSgj3HNE3s1hAOrX4eFmj7L0gIDj8ssz-K0QJVmbB8zqsoCQ/viewform"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -62,7 +63,7 @@ export default function HeroSection() {
               size="lg"
               className="bg-[#00BFFF] hover:bg-[#1E90FF] text-black font-semibold px-8 py-6 text-lg rounded-full glow-blue transition-all duration-300 hover:scale-105 group"
             >
-              Book a call
+              Contact Us
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
           </a>
@@ -86,18 +87,18 @@ export default function HeroSection() {
           {[
             {
               icon: "🎬",
-              title: "High-Converting Ads",
-              description: "Reels & Shorts that drive sales",
+              title: "High-Converting Videos",
+              description: "Visuals that create brand identity.",
             },
             {
               icon: "📱",
-              title: "Social Media Magic",
-              description: "Content & management done right",
+              title: "Website Magic",
+              description: "Websites that work their magic.",
             },
             {
               icon: "🚀",
-              title: "Websites and apps",
-              description: "We build high quality websites",
+              title: "Tech that Scales",
+              description: "High quality tech that your business needs.",
             },
           ].map((item, index) => (
             <div

@@ -18,50 +18,14 @@ export default function ServicesSection() {
   const services = [
     {
       icon: <Video className="h-8 w-8 text-[#00BFFF]" />,
-      title: "Short Form Content",
+      title: "Video Creation (Shoot + Edit)",
       description:
-        "Engaging reels, shorts, and TikToks that stop the scroll and drive action",
+        "Engaging reels, shorts, and long-form videos that creates a brand identity and drive action",
       features: [
-        "15-60 second videos",
+        "15-60 seconds + long-form videos",
         "Platform optimization",
         "Viral content strategy",
         "Trending audio integration",
-      ],
-    },
-    {
-      icon: <Edit3 className="h-8 w-8 text-[#00BFFF]" />,
-      title: "Posts",
-      description:
-        "Eye-catching static and carousel posts designed to maximize engagement",
-      features: [
-        "Custom graphics",
-        "Brand-consistent design",
-        "Copywriting",
-        "Story templates",
-      ],
-    },
-    {
-      icon: <Smartphone className="h-8 w-8 text-[#00BFFF]" />,
-      title: "Social Media Handling",
-      description:
-        "Complete social media strategy and management across all platforms",
-      features: [
-        "Content planning",
-        "Daily posting",
-        "Community management",
-        "Analytics reporting",
-      ],
-    },
-    {
-      icon: <TrendingUp className="h-8 w-8 text-[#00BFFF]" />,
-      title: "Paid Ads",
-      description:
-        "Data-driven ad campaigns that maximize ROI and scale your business",
-      features: [
-        "Paid social campaigns",
-        "Conversion optimization",
-        "Audience targeting",
-        "Performance tracking",
       ],
     },
     {
@@ -74,17 +38,6 @@ export default function ServicesSection() {
         "Custom development",
         "SEO optimization",
         "Performance optimization",
-      ],
-    },
-    {
-      icon: <Code className="h-8 w-8 text-[#00BFFF]" />,
-      title: "App Development",
-      description:
-        "Native and cross-platform mobile applications that deliver exceptional user experiences",
-      features: [
-        "iOS & Android apps",
-        "Cross-platform solutions",
-        "UI/UX design",
       ],
     },
   ];
@@ -128,9 +81,8 @@ export default function ServicesSection() {
             Our <span className="text-gradient-blue">Services</span>
           </h2>
           <p className="text-xl md:text-2xl text-gray-400 max-w-4xl mx-auto leading-relaxed">
-            From concept to conversion, we offer comprehensive solutions to
-            elevate your brand&apos;s social media presence and drive real
-            business results.
+            From concept to execution, we offer comprehensive solutions to
+            elevate your brand&apos;s presence and drive real business results.
           </p>
         </div>
 
@@ -167,7 +119,7 @@ export default function ServicesSection() {
               </ul>
 
               <a
-                href="https://calendar.app.google/mAjQDgh176jeHbkz6"
+                href="mailto:ateightmedia@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -228,7 +180,10 @@ export default function ServicesSection() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="mailto:ateightmedia@gmail.com" className="inline-block">
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSeSgj3HNE3s1hAOrX4eFmj7L0gIDj8ssz-K0QJVmbB8zqsoCQ/viewform"
+              className="inline-block"
+            >
               <Button
                 size="lg"
                 className="bg-[#00BFFF] hover:bg-[#1E90FF] text-black font-semibold px-8 py-6 text-lg rounded-full transition-all duration-300 hover:scale-105"
@@ -236,7 +191,7 @@ export default function ServicesSection() {
                 Start Your Project
               </Button>
             </a>
-            <a
+            {/* <a
               href="https://calendar.app.google/mAjQDgh176jeHbkz6"
               target="_blank"
               rel="noopener noreferrer"
@@ -248,7 +203,7 @@ export default function ServicesSection() {
               >
                 Schedule a Call
               </Button>
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

@@ -101,12 +101,8 @@ export default function Footer() {
             <h4 className="text-lg font-semibold mb-4 text-white">Services</h4>
             <ul className="space-y-3">
               {[
-                "Instagram Reels",
-                "YouTube Shorts",
-                "X Posts",
-                "LinkedIn Posts",
-                "Social Media Ads",
-                "Content Management",
+                "Video Creation (Shoot + Edit)",
+                "Website Design & Development",
               ].map((service) => (
                 <li key={service}>
                   <span className="text-gray-400">{service}</span>

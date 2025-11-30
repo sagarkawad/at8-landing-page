@@ -11,32 +11,31 @@ const faqs = [
   {
     question: "What services does At8 offer?",
     answer:
-      "At8 offers comprehensive digital solutions including graphic/logo design, short-form video content (Instagram Reels, YouTube Shorts, TikTok), static and carousel posts, full social media management and handling, paid advertising campaigns, website design and development, and mobile app development for iOS and Android platforms.",
+      "At8 offers comprehensive video creation, video edit and website design and development services for your brand.",
   },
   {
     question: "Do you only create short-form videos?",
     answer:
-      "We currently only create short-form content or static posts but we are open to new formats and their execution. So just let us know and we'll be at it.",
+      "We currently only create short-form content but we are open to new formats and their execution. So just let us know and we'll be at it.",
   },
   {
     question: "Do you handle posting and ad campaigns?",
     answer:
-      "Absolutely! We offer end-to-end social media management including content creation, scheduling, posting, community engagement, and running paid advertising campaigns across Instagram, Facebook, YouTube, LinkedIn & X",
+      "No! We currently don't offer end-to-end social media management and advertising campaigns across social media.",
   },
   {
-    question: "How much do you charge per video/ad?",
+    question: "How much do you charge per video?",
     answer:
       "Our pricing varies based on project scope, video length, complexity, and deliverables. We offer custom packages starting from single videos to monthly retainers for ongoing content. Contact us for a personalized quote tailored to your needs.",
   },
   {
-    question: "How much do you charge per website/application?",
-    answer:
-      "Our pricing varies depending on the complexity of the website or the application.",
+    question: "How much do you charge per website?",
+    answer: "Our pricing varies depending on the complexity of the website.",
   },
   {
     question: "How can I work with At8?",
     answer:
-      "Getting started is easy! Simply reach out by booking a call, email, or social media. We'll understand about your brand, goals, and vision. From there, we'll create a custom proposal and timeline for your project.",
+      "Getting started is easy! Simply reach out by filling out the form. We'll understand about your brand, goals, and vision. From there, we'll create a custom proposal and timeline for your project.",
   },
 ];
 
@@ -76,7 +75,10 @@ export default function FAQSection() {
           <p className="text-gray-400 mb-6">
             We&apos;re here to help! Get in touch with our team.
           </p>
-          <a href="mailto:ateightmedia@gmail.com" className="inline-block">
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeSgj3HNE3s1hAOrX4eFmj7L0gIDj8ssz-K0QJVmbB8zqsoCQ/viewform"
+            className="inline-block"
+          >
             <button className="px-8 py-4 rounded-full bg-[#00BFFF] text-black font-semibold hover:bg-[#1E90FF] transition-all duration-300 hover:scale-105 glow-blue">
               Contact Us
             </button>

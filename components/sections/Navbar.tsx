@@ -69,7 +69,7 @@ export default function Navbar() {
           {/* CTA Button */}
           <div className="hidden md:block">
             <a
-              href="https://calendar.app.google/mAjQDgh176jeHbkz6"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSeSgj3HNE3s1hAOrX4eFmj7L0gIDj8ssz-K0QJVmbB8zqsoCQ/viewform"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -77,7 +77,7 @@ export default function Navbar() {
                 size="sm"
                 className="bg-[#00BFFF] hover:bg-[#1E90FF] text-black font-semibold px-6 py-2 rounded-full transition-all duration-300 hover:scale-105"
               >
-                Book a call
+                Contact Us
               </Button>
             </a>
           </div>
@@ -122,7 +122,7 @@ export default function Navbar() {
                   }}
                   className="w-full bg-[#00BFFF] hover:bg-[#1E90FF] text-black font-semibold px-6 py-2 rounded-full transition-all duration-300"
                 >
-                  Book a call
+                  Contact Us
                 </Button>
               </div>
             </div>
