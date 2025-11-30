@@ -11,8 +11,14 @@ const faqs = [
   {
     question: "What services does At8 offer?",
     answer:
-      "At8 offers comprehensive video creation, video edit and website design and development services for your brand.",
+      "At8 offers comprehensive creative video creation and website design and development services for your brand.",
   },
+  {
+    question: "Do you build full-stack web apps?",
+    answer:
+      "Yes! We not only build landing pages but also full-stack web applications.",
+  },
+
   {
     question: "Do you only create short-form videos?",
     answer:
@@ -21,7 +27,7 @@ const faqs = [
   {
     question: "Do you handle posting and ad campaigns?",
     answer:
-      "No! We currently don't offer end-to-end social media management and advertising campaigns across social media.",
+      "No! We currently don't offer social media management and advertising campaigns.",
   },
   {
     question: "How much do you charge per video?",

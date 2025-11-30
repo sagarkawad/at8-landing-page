@@ -18,7 +18,7 @@ export default function ServicesSection() {
   const services = [
     {
       icon: <Video className="h-8 w-8 text-[#00BFFF]" />,
-      title: "Video Creation (Shoot + Edit)",
+      title: "Creative Videos (Shoot & Edit)",
       description:
         "Engaging reels, shorts, and long-form videos that creates a brand identity and drive action",
       features: [
@@ -30,7 +30,7 @@ export default function ServicesSection() {
     },
     {
       icon: <Globe className="h-8 w-8 text-[#00BFFF]" />,
-      title: "Website Design and Development",
+      title: "Website Development",
       description:
         "Custom websites that combine stunning design with powerful functionality to showcase your brand",
       features: [

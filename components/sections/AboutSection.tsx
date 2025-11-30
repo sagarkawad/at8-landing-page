@@ -82,8 +82,8 @@ export default function AboutSection() {
               being creative—it&apos;s about understanding psychology, platform
               algorithms, and most importantly, your audience&apos;s deepest
               desires and pain points. Not just that but businesses also do need
-              other services such as website design + development so for that we
-              also have a dedicated team to make your idea a reality.
+              other services such as web development so for that we also have a
+              dedicated team to make your idea a reality.
             </p>
             <p className="text-gray-400 text-lg leading-relaxed">
               We are getting started but we are confident that we can create

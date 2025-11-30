@@ -9,7 +9,7 @@ const works = [
     id: 1,
     title: "Market it!",
     brand: "At8",
-    tags: ["Video Creation"],
+    tags: ["Videos"],
     thumbnail:
       "https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=800",
     platform: "instagram",
@@ -21,7 +21,7 @@ const works = [
     id: 2,
     title: "Misal ad",
     brand: "Katakirrr",
-    tags: ["Video Creation", "Local Business"],
+    tags: ["Videos"],
     thumbnail:
       "https://imgs.search.brave.com/HyefZUzHfQFgnuvpZN9lmJvvij8xFz91aObpLc3L80c/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jb250/ZW50LmpkbWFnaWNi/b3guY29tL2NvbXAv/cHVuZS9jOS8wMjBw/eHgyMC54eDIwLjE3/MDExMzAwMDQxOC51/N2M5L2NhdGFsb2d1/ZS9rYXRhLWtpcnIt/ZXJhbmR3YW5lLXB1/bmUtcmVzdGF1cmFu/dHMtMTFhdnE2OS5q/cGc_dz0zODQwJnE9/NzU",
     platform: "instagram",
@@ -33,7 +33,7 @@ const works = [
     id: 3,
     title: "Find your wild!",
     brand: "Wild Stone",
-    tags: ["Video Creation"],
+    tags: ["Videos"],
     thumbnail:
       "https://imgs.search.brave.com/JMsVqb5eKOAKFvuLzd3gm0WfE__GKS4jXkgxo6C9mLM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/d2lsZHN0b25lLmlu/L2Nkbi9zaG9wL2Zp/bGVzL0FydGJvYXJk/XzVfNGM1NTJjZmQt/ZTAwZC00MDQ4LTk5/MzQtY2E3YjM4NTEz/M2M2XzE0NDV4Lmpw/Zz92PTE3MjMxMDE3/MzA",
     platform: "instagram",
@@ -45,7 +45,7 @@ const works = [
     id: 4,
     title: "Aabha Productions",
     brand: "Aabha Productions",
-    tags: ["Website Design and Development"],
+    tags: ["Web"],
     thumbnail:
       "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800",
     platform: "website",
@@ -56,7 +56,7 @@ const works = [
     id: 5,
     title: "Belyno Cycles",
     brand: "Belyno Cycles",
-    tags: ["Website Design and Development"],
+    tags: ["Web"],
     thumbnail:
       "https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&w=800",
     platform: "website",
@@ -67,7 +67,7 @@ const works = [
     id: 6,
     title: "PixelOne Pro",
     brand: "PixelOne",
-    tags: ["Website Development"],
+    tags: ["Web"],
     thumbnail:
       "https://images.pexels.com/photos/17485678/pexels-photo-17485678.png",
     platform: "website",

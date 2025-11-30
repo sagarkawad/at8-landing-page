@@ -100,14 +100,13 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4 text-white">Services</h4>
             <ul className="space-y-3">
-              {[
-                "Video Creation (Shoot + Edit)",
-                "Website Design & Development",
-              ].map((service) => (
-                <li key={service}>
-                  <span className="text-gray-400">{service}</span>
-                </li>
-              ))}
+              {["Creative Videos (Shoot & Edit)", "Web Development"].map(
+                (service) => (
+                  <li key={service}>
+                    <span className="text-gray-400">{service}</span>
+                  </li>
+                )
+              )}
             </ul>
           </div>
 
