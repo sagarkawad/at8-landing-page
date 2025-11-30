@@ -181,6 +181,7 @@ export default function ServicesSection() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
+              target="_blank"
               href="https://docs.google.com/forms/d/e/1FAIpQLSeSgj3HNE3s1hAOrX4eFmj7L0gIDj8ssz-K0QJVmbB8zqsoCQ/viewform"
               className="inline-block"
             >

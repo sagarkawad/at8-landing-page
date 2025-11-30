@@ -76,7 +76,8 @@ export default function FAQSection() {
             We&apos;re here to help! Get in touch with our team.
           </p>
           <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSeSgj3HNE3s1hAOrX4eFmj7L0gIDj8ssz-K0QJVmbB8zqsoCQ/viewform"
+            target="_blank"
+            href="mailto:ateightmedia@gmail.com"
             className="inline-block"
           >
             <button className="px-8 py-4 rounded-full bg-[#00BFFF] text-black font-semibold hover:bg-[#1E90FF] transition-all duration-300 hover:scale-105 glow-blue">
