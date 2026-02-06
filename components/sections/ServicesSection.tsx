@@ -128,7 +128,7 @@ export default function ServicesSection() {
                   variant="outline"
                   className="w-full border-[#00BFFF]/30 text-[#00BFFF] hover:bg-[#00BFFF] hover:text-black transition-all duration-300"
                 >
-                  Learn More
+                  Enquire
                 </Button>
               </a>
             </div>
