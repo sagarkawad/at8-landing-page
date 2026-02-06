@@ -30,11 +30,11 @@ export default function ServicesSection() {
     },
     {
       icon: <Globe className="h-8 w-8 text-[#00BFFF]" />,
-      title: "Website Development",
+      title: "Web Development / App Development",
       description:
-        "Custom websites that combine stunning design with powerful functionality to showcase your brand",
+        "Custom fullstack websites / apps or automation scripts that leverages your business",
       features: [
-        "Responsive web design",
+        "Responsive web development",
         "Custom development",
         "SEO optimization",
         "Performance optimization",
