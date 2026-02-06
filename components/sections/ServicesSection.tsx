@@ -18,7 +18,7 @@ export default function ServicesSection() {
   const services = [
     {
       icon: <Video className="h-8 w-8 text-[#00BFFF]" />,
-      title: "Creative Videos (Shoot & Edit)",
+      title: "Creative Video Edit",
       description:
         "Engaging reels, shorts, and long-form videos that creates a brand identity and drive action",
       features: [
